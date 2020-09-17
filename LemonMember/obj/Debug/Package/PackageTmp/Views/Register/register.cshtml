@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>注册青柠檬成员</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <a href="http://47.93.51.66:8090/Home/Index" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+            <h1>青柠檬话剧社</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form method="post" action="register">
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name">
+                <label for="name">性别：</label>
+                <select name="gender" id="gender">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                    <option value="none">Not sure</option>
+                </select>
+                <label for="student_id">学号：</label>
+                <input type="text" name="student_id" id="student_id">
+                <label for="student_dept">学院：</label>
+                <input type="text" name="student_dept" id="student_dept">
+                <label for="tel">手机：</label>
+                <input type="text" name="tel" id="tel">
+                <label for="qq">QQ：</label>
+                <input type="text" name="qq" id="qq">
+                <input type="submit" data-inline="true" value="提交">
+            </form>
+            <div>
+                <h3>由于时间仓促前端并未校验，请勿输入无效数据谢谢！</h3>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h1>Copyright © Beta 2016-2017 sunbaixi.com</h1>
+        </div>
+    </div>
+</body>
+</html>

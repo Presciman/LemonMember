@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- meta使用viewport以确保页面可自由缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 引入 jQuery Mobile 样式 -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- 引入 jQuery 库 -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>注册青柠檬成员</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主页</a>
+            <h1>青柠檬话剧社</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <label for="msg">你的认证Token是:</label>         
+                <p>
+                    @Html.Encode(ViewData["token" ])
+                </p>
+            <label for="msg1">记好这个Token哦！我们见面的时候会用到</label>
+        </div>
+    </div>
+</body>
+</html>
